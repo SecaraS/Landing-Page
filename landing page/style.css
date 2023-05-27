@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap');
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Noto Sans', sans-serif;
+}
+.background-st {
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  
+}
+.title {
+  color: #c01e82;
+  font-size: 32px;
+}
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 100px;
+  min-height:  100vh;
+  background: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 15px 50px;
+  justify-content: start;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  position: relative;
+  max-width: 70px;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+header .title {
+  position: relative;
+  max-width: 70px;
+}
+.container {
+  position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 0px;
+}
+.container .text {
+ max-width: 600px;
+ padding-left: 130px;
+  position: relative;
+}
+.container .text h2 {
+  color: #bf1dec;
+  font-size: 2.1em;
+  line-height: 1.4em;
+  font-weight: 500;
+  padding-bottom: 20px; 
+}
+.container .text p {
+  color: #d80fe3;
+  padding-bottom: 70px;
+  font-size: 16px;
+} 
+.container .text a{
+  display: inline-block;
+  background: #fcc6ff;
+  color: rgb(222, 1, 214);
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 16px 40px;
+  margin-bottom: 100px;
+}
+ .container .text a:hover{
+background: transparent;
+border: 1px solid #f54ffe;
+transform: translateX(5px);
+  }
+.container .img2 {
+  display: flex;
+  width: 650px;
+}
+.sci {
+  position: absolute;
+  display: flex;
+  top: 90%;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+.sci li {
+  list-style-type: none;
+}
+.sci li a {
+  display: inline-block;
+  margin: 5px;
+  transform: scale(0.9);
+}
+
+@media (max-width: 1200px) {
+.background-st {
+    background-image: url(images/mobile-version.svg);
+    background-size: cover;
+}
+    section,
+    .container,
+    .web-sites {
+      flex-direction: column;
+    }
+    .name-header {
+     padding-left: 27%;
+    }
+    header .logo {
+      height: 50px;
+      margin-right: 4%;
+    }
+    header .title {
+      font-size: 35px;
+    }
+    .tab{
+      width: 110;
+      height: 300px;
+      margin-left: 100px;
+      position: relative;
+  }
+    .container .text  {
+      padding-left: 9%;
+    }
+        .container .text h2 {
+          font-size: 30px;
+        }
+         .container .text p {
+           font-size: 16px;
+         }
+         .web-sites {
+          position: relative;
+          padding-left: 25%;
+         }
+                 .container .text a {
+                   padding: 16px 70px;
+                  margin-left: 17%;
+                 }
+}
+               
+@media (max-width: 700px) {
+  .background-st{
+    background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-right: 400px;
+    width: 680px;
+    height: auto;
+  }
+  body{
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+    .name-header {
+      padding-left: 21%;
+    }
+  
+    .container .text a {
+     padding: 15px 20px;
+      margin-left: 16%;
+    }
+  
+    .web-sites {
+      position: relative;
+      padding-left: 500px;
+    }
+    .tab {
+        padding-left: 25%;
+    }
+    .text {
+      margin-left: 280px;
+      width: 400px;
+    }
+        .container .text a {
+          padding: 16px 46px;
+          margin-left: 20%;
+        }
+}
+@media (max-width: 550px) {
+.background-st {
+    width: 100%;
+      height: auto;
+}
+ .name-header {
+   padding-left: 7%;
+ }
+.tab {
+ margin-left: 17%;
+  width: 400px;
+  height: 150px;
+}
+.text {
+width: 250px;
+height: 300px;
+padding-top: 20px;
+margin-left: 150px;
+}
+.container .text .part1{
+  font-size: 20px;
+}
+.container .text p{
+  font-size: 16px;
+}
+.container .text a {
+  padding: 8px 32px;
+  margin-left: 5%;
+}
+ .web-sites {
+  padding-top: 50px;
+  margin-right: 150px;
+ }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+}
